@@ -1,0 +1,557 @@
+:root{
+    
+    --theme-color:#059891;
+    --theme-hover:#54bbb7;
+    --theme-label:dimgray;
+    --theme-grey_:#a9a9a9;
+    --theme-back_col:linear-gradient(90deg, #059891, #712c59f7);
+    --theme-back_hov:linear-gradient(90deg, #712c59f7, #059891);
+    --theme-error:red;
+    /*#a21919*/
+
+}
+*{
+    
+	margin: 0;
+    padding: 0;
+    font-style: italic;
+
+}
+#paginat_margin>div{
+    margin-left:10px;
+}
+.pagi_div{
+    width:fit-content;margin:auto;
+}
+.FL,.four>div,.three>div,
+.two>div,.rad>div                           
+        {
+            float:left;
+        }
+.FR     {
+    float:right !important;
+}
+.ML     {
+    margin-right: 15px;
+}
+.MR     {
+    margin-left: 15px;
+}
+.MT     {
+    margin-top:10px;
+}
+.MB     {
+    margin-bottom:10px;
+}
+.heading_,._cent_lay                            
+        {
+            width:100%;
+        }
+.three>div                          
+        {
+            width:32%;
+        }
+.two.clr>div                            
+        {
+            width:49%;
+        }
+.three>.FL:nth-child(2),
+.rad.clr>div:last-child                         
+        {
+            margin:0 2% 0 2%;
+        }
+.color_sel                          
+        {
+            width:24% !important;
+        }
+.color_sel                          
+        {
+            width:20%;
+        }
+.CP                         
+        {
+            cursor: pointer;
+        }
+#JT_List tbody                        
+        {
+            border: 1px solid var(--theme-grey_);
+        }
+#JT_List tbody tr:last-child                            
+        {
+            border-bottom:none;
+        }
+#JT_List td                         
+        {
+            border-right:1px solid var(--theme-grey_);
+        }
+.file_Up input                          
+        {
+            margin-left: 22px !important;
+        }
+.rad>div>label                          
+        {
+            color:var(--theme-label);
+        }
+.file_Up>label[for='DP']:hover,
+.Color_Up>label[for='color_']:hover
+        {
+            background:var(--theme-back_hov);
+        }
+.color_set :hover
+        {
+            background: transparent;
+        }
+.JT_img img:hover
+        {
+            transform:scale(0.9);
+        }
+.pass_icon:hover{
+    
+        background: var(--theme-back_hov);
+    }
+#paginat_:hover,
+#color_check:hover,
+#success_okay:hover,
+.JT_buttn:hover{
+    
+        border-radius: 4px;
+        background: var(--theme-back_hov);
+        margin-right: 0;
+        border-right: 4px;
+        box-shadow: unset;
+
+}
+.clr:after{
+    
+        content:'';
+        display: block;
+        clear:both;
+    }
+.four>.FL:nth-child(2),
+.four>.FL:nth-child(3){
+    
+    margin:0 0 0 1%;
+}
+#jobTestReg .error,
+#jobTestupdate .error{
+    
+        color:#ec0f0f;
+        font-size: 13px;
+        letter-spacing: 0.5px
+    }
+#JT form>section,
+#admin_section{
+    
+        width: 90%;
+        margin:20px auto;
+
+}
+.NO_REGIS_FOUND{
+    
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-top: 2em;
+
+}
+/*color_set*/
+input{
+    
+        border: none;
+        font-size: 13px;
+        outline: none;
+        color: var(--theme-label);
+        width: 100%;
+
+}
+a,button{
+    
+        font-size: 12px;
+        text-decoration: none;
+        color:currentColor;
+        outline: none;
+        border:none;
+
+}
+span{
+    
+        width: fit-content;
+        margin: 10px auto;
+
+}
+.clr>div>label{
+    
+        margin-bottom: 8px;
+        display: block;
+        letter-spacing: 0.5px;
+        color:var(--theme-color);
+
+}
+/*table_designing*/
+#JT_List{
+    
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        transition: 1s all linear;
+
+}
+#JT_List>thead tr{
+    
+        color: white;
+        line-height: 34px;
+        border-collapse: collapse;
+        border-bottom: none;
+        background: var(--theme-color);
+        box-shadow: 0px 3px 8px #c5c5c5;
+
+}
+#JT_List>tbody tr>td{
+    
+    padding:5px;
+    max-width: 90px;
+    min-width: 80px;
+
+}
+#JT_List>tbody tr>td:last-child{
+    
+       width: 85px;
+
+}
+#JT_List thead tr th{
+    
+        padding: 8px;
+        letter-spacing: 1px;
+        border-bottom: none;
+        text-transform: lowercase;
+
+}
+#JT_List tbody tr {
+    
+        color: var(--theme-label);
+        border-top: none;
+        border-bottom: 0.5px solid var(--theme-grey_);
+        border-top: 0.5px solid var(--theme-grey_);
+
+}
+.JT_img{
+    
+        width: 90px;
+        height: 90px;
+        margin: 5px auto;
+
+}
+.JT_img img{
+    
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        transition: 0.35s transform linear;
+
+}
+.JT_buttn{
+    
+        padding: 8px 15px 8px 15px;
+        background: var(--theme-back_col);
+        color: #ffffff;
+        border-radius: 3px;
+        transition:0.35s all cubic-bezier(0.25, 1.1, 0.93, 1.1);
+        display: block;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-size: 12px;
+
+}
+.file_Up,.date_Up,.Color_Up,
+.Time_Up,.PASS_EYE{
+    
+        position: relative;
+        border: 1px solid var(--theme-label);
+        padding: 6px;
+        overflow: hidden;
+        border-radius: 3px;
+
+}
+.file_Up>label[for='DP'],
+.Color_Up>label[for='color_']{
+    
+        position: absolute;
+        overflow: hidden;
+        left: 0;
+        border-radius: 2px 0px 0px 0px;
+        background: var(--theme-back_col);
+        padding: 10px 33px;
+        top: 0;
+        color: white;
+        transition: 0.25s all linear;
+
+}
+.pass_icon{
+    
+        position: absolute;
+        overflow: hidden;
+        background: var(--theme-back_col);
+        top: 0;
+        right: 0;
+        padding: 4px 0px 0px 10px;
+        color: white;
+        height: 100%;
+        width: 36px;
+        transition: 0.35s all linear;
+
+}
+.Color_Up>.color:before,
+.file_Up>.file:before{
+    
+        position: absolute;
+        content: '';
+        display: block;
+        width: 22px;
+        height: 22px;
+        background: white;
+        top: 0px;
+        transform: rotate(46deg);
+        right: -12px;
+        border: 1px solid var(--theme-label);
+        box-shadow: inset 3px 1px 4px 0px #bdb7b7;
+
+}
+.color_set {
+    
+        width: 100%;left: 11em;
+        top: 6px;
+        overflow: hidden;
+        content: '';
+        font-size: 20px;
+        position: absolute;
+
+}
+#color_check {
+    
+    width: fit-content;
+    right: 0;
+    background: var(--theme-back_col);
+    padding: 11px;
+    top: 0;
+    color: white;
+    height: 100%;
+    position: absolute;
+
+}
+/*Color_Up*/
+.JT_input{
+    
+        border: 1px solid var(--theme-label);
+        border-radius: 4px;
+        padding: 6px;
+
+}
+#JT form>div,
+#JT_modal form>div{
+    padding:10px;
+
+}
+#JT form>div .clr ,
+#JT_modal form>div .clr {
+    margin-bottom: 1rem;
+
+}
+input[type="checkbox"],input[type="radio"]
+        {
+            display: none;
+    
+    }
+input[type="color"]{
+    
+        opacity: 0;
+        width: fit-content;
+
+}
+.JT_radio{
+    position:relative;
+
+}
+.JT_radio .my_radio{
+    
+        margin-left: 18px;
+        display: inline;
+
+}
+.JT_radio .my_radio:before,
+.JT_radio .my_radio:after{
+    
+        position: absolute;
+        content: '';
+        display: block;
+        border-radius: 50%;
+        transition:0.25s all linear;
+
+}
+.JT_radio .my_radio:before{
+    
+        top: 2px;
+        width: 12px;
+        height: 12px;
+        border: 0.5px solid var(--theme-grey_);
+
+}
+.JT_radio .my_radio:after{
+    
+        top: 6px;
+        margin: auto;
+        left: 4px;
+        width: 6px;
+        height: 6px;
+
+}
+
+.JT_radio input[type="radio"]:checked ~ label:after{
+ 
+        background: var(--theme-back_col);
+        box-shadow: 0px 0px 1px #b3b3b3;
+
+}
+#JT{
+    
+        width: 50%;
+        margin: 50px auto;
+        border-radius: 2px;
+        box-shadow: 0px 0px 7px #c1c0c0;
+
+}
+#JT_modal{
+    
+    display: none;
+    transform: scale(0);
+        width: 100%;
+        z-index: 100;
+        height: 620px;
+        border-radius: 2px;
+        top: 0;
+        background: #000000b3;
+        position: fixed;
+        box-shadow: 0px 0px 7px #c1c0c0;
+        transition: 2s all linear;
+
+}
+.active#JT_modal{
+    
+        display: unset;
+        width: 100%;
+        z-index: 100;
+        height: 620px;
+        border-radius: 2px;
+        top: 0;
+        background: #000000b3;
+        position: absolute;
+        box-shadow: 0px 0px 7px #c1c0c0;
+        transition: 2s all linear;
+
+}
+.active#JT_modal form{
+    
+        background: white;
+        width: 50%;
+        position: absolute;
+        margin: auto;
+        left: 25%;
+        top: 15%;
+
+}
+._cent_lay{
+    
+        display: flex;
+        justify-content: center;
+
+}
+.heading_{
+    
+        text-align: center;
+        padding: 10px 0px;
+        box-shadow: 1px -3px 8px 1px #b3b3b3;
+
+}
+.heading_>h1{
+    
+        color: var(--theme-color);
+        font-size: 20px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+
+}
+.heading_>span{
+    
+        font-size: 11px;
+        letter-spacing: 4px;
+        color: var(--theme-label);
+
+}
+
+/*sucess message*/
+.overlay_background {
+    
+        background: #000000b3;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        min-height: 625px;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        transform: scale(0);
+        position: absolute;
+        transition: 1s all cubic-bezier(0.77, 1.89, 0, 0.46);
+
+}
+.active .overlay_background>div{
+    
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: -webkit-inline-box;
+
+}
+.overlay_background.active{
+    
+        background: #000000b3;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        min-height: 625px;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        transform: scale(1);
+        position: absolute;
+        transition: 1s all cubic-bezier(0.77, 1.89, 0, 0.46);
+
+}
+.active #success_okay{
+    
+        width: fit-content;
+        margin: auto;
+        margin-top: 10px;
+
+}
+.active .message{
+    
+        border-radius: 50%;
+
+}
+.active .message{
+    
+        padding: 20px 18px;
+        width: 20%;
+        height: 10%;
+        text-align: center;
+        letter-spacing: 1px;
+        position: absolute;
+        top: 45%;
+        left: 40%;
+        border-radius: 4px;
+        color: #059840;
+        background: #f5f5f5;
+        box-shadow: 1px 1px 10px #000000;
+
+}
